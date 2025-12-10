@@ -1,0 +1,27 @@
+{
+  "newTests": [
+    {
+      "id": 1,
+      "title": "SAT Math Section Practice",
+      "tag": "SAT",
+      "duration": "1 hour 20 minutes",
+      "color": "purple"
+    },
+    {
+      "id": 2,
+      "title": "PSAT Reading & Writing",
+      "tag": "PSAT",
+      "duration": "1 hour 4 minutes",
+      "color": "mint"
+    }
+  ],
+  "completedTests": [
+    {
+      "id": 3,
+      "title": "SAT Writing Practice",
+      "tag": "SAT",
+      "duration": "35 minutes",
+      "color": "purple"
+    }
+  ]
+}
