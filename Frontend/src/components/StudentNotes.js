@@ -141,7 +141,7 @@ function StatisticsCard() {
       className="bg-white dark:bg-slate-950 rounded-3xl shadow-[0_18px_45px_rgba(129,140,248,0.25)] dark:shadow-[0_18px_45px_rgba(15,23,42,0.9)] overflow-hidden border border-purple-200 dark:border-purple-600 flex-1 mt-6 lg:mt-0"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }} // triggers when ~30% visible
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       {/* Header */}

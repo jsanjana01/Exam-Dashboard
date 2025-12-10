@@ -1,9 +1,7 @@
-// src/components/ThemeToggle.js
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState(() => {
-    // get from localStorage or system preference
     if (typeof window !== "undefined") {
       const stored = localStorage.getItem("theme");
       if (stored) return stored;

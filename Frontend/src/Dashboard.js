@@ -41,7 +41,6 @@ const Dashboard = () => {
 
   return (
     <>
-      {/* pass real data to components now */}
       <div className="sticky top-0 z-50 bg-white">
         <Header />
       </div>

@@ -21,51 +21,6 @@ export const navItems = [
 
 export default function Header() {
   const [activeNav, setActiveNav] = useState(1);
-
-  // return (
-  //   <header className="w-full bg-white border-b shadow-sm">
-  //     <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-  //       {/* Left Logo */}
-  //       <div className="flex items-center gap-3">
-  //         <div className="bg-purple-500 p-3 rounded-xl  text-white">
-  //           <GraduationCap size={18} />
-  //         </div>
-  //         <h1 className="text-2xl font-semibold text-purple-600">ExcelTest</h1>
-  //       </div>
-  //       <ThemeToggle />
-
-  //       {/* Navigation */}
-  //       <nav className="flex items-center gap-8 text-gray-700">
-  //         {navItems.map(({ id, label, icon: Icon, active, targetId }) => (
-  //           <div
-  //             key={id}
-  //             onClick={() => {
-  //               setActiveNav(id);
-  //               const el = document.getElementById(targetId);
-  //               if (el) {
-  //                 el.scrollIntoView({ behavior: "smooth" });
-  //               }
-  //             }}
-  //             className={
-  //               activeNav === id
-  //                 ? "flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-xl text-purple-600 font-medium cursor-pointer"
-  //                 : "flex items-center gap-2 hover:text-purple-600 cursor-pointer"
-  //             }
-  //           >
-  //             <Icon size={18} />
-  //             {label}
-  //           </div>
-  //         ))}
-  //       </nav>
-
-  //       {/* Logout */}
-  //       <button className="flex items-center gap-2 text-red-600 font-medium hover:text-red-700">
-  //         <LogOut size={20} />
-  //         Logout
-  //       </button>
-  //     </div>
-  //   </header>
-  // );
   return (
     <header className="w-full bg-white dark:bg-slate-950 border-b border-gray-200 dark:border-slate-700 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
@@ -95,7 +50,6 @@ export default function Header() {
               whileHover={{ scale: 1.06 }}
               whileTap={{ scale: 0.96 }}
             >
-              {/* Active pill background */}
               {activeNav === id && (
                 <motion.span
                   layoutId="nav-pill"
@@ -116,7 +70,6 @@ export default function Header() {
                 {label}
               </span>
 
-              {/* Underline for active item */}
               {activeNav === id && (
                 <motion.span
                   layoutId="nav-underline"

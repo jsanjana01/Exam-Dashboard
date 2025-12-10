@@ -15,7 +15,6 @@ export default function StudentProfile({ student }) {
 
         {/* Content */}
         <div className="px-8 py-8 flex items-center justify-between gap-10">
-          {/* Left: avatar + name + phone */}
           <div className="flex items-center gap-8">
             {/* Avatar */}
             <div className="w-28 h-28 rounded-full border-[6px] border-purple-100 dark:border-purple-500 flex items-center justify-center bg-purple-50 dark:bg-purple-900/40">
@@ -23,11 +22,9 @@ export default function StudentProfile({ student }) {
                 src="/avatar.webp"
                 alt="User Avatar"
                 className="w-24 h-24 rounded-full object-cover border-4 border-gray-200 dark:border-gray-700"
-                // Initial animation
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                // Hover animation
                 whileHover={{ scale: 1.06 }}
                 whileTap={{ scale: 0.98 }}
               />
@@ -54,7 +51,6 @@ export default function StudentProfile({ student }) {
             </div>
           </div>
 
-          {/* Right: email + location + button */}
           <div className="flex-1 flex items-start justify-between gap-10">
             <div className="space-y-4">
               <div>
